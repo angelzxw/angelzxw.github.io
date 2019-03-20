@@ -30,8 +30,16 @@
   $('.gallery .gall_item').touchTouch();
  });
  $(document).ready(function(){
-   zoom = $(window).width()/$("body").width()*100;
- 	 document.body.style.zoom = zoom+"%";
+    htmlWidth = $('html').innerWidth();
+    bodyWidth = $('body').width();
+    bodyWidth_min = 10000;
+    if (bodyWidth_min < bodyWidth){
+      scale = 1
+    } else {
+      scale = htmlWidth / bodyWidth;
+     }
+   zoom = scale*100+"%";
+ 	 document.body.style.zoom = zoom;
      jQuery('#camera_wrap').camera({
       loader: false,
       pagination: true ,
@@ -43,6 +51,18 @@
       fx: 'mosaic'
     });
     $('.gallery .gall-item').touchTouch();
+  });
+  $(window).on('resize', function(){
+    htmlWidth = $('html').innerWidth();
+    bodyWidth = $('body').width();
+    bodyWidth_min = 1400;
+    if (bodyWidth_min < bodyWidth){
+      scale = 1
+    } else {
+      scale = htmlWidth / bodyWidth;
+    }
+   zoom = scale*100+"%";
+   document.body.style.zoom = zoom;
   });
 </script>
 
@@ -58,7 +78,7 @@
 <link rel="stylesheet" media="screen" href="css/ie.css">
 <![endif]-->
 </head>
-<body>
+<body onResize="window.location=window.location;">
 <div class="texture">
 <!--==============================
               header
