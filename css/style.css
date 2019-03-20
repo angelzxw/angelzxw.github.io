@@ -46,6 +46,9 @@ address {
 }
 p {
   margin-bottom: 24px;
+  font-weight: 400;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: normal;
 }
 p.offset__1 {
   margin-bottom: 31px;
