@@ -44,7 +44,6 @@ address {
   font-style: normal;
 }
 p {
-  display: block;
   margin-bottom: 24px;
 }
 p.offset__1 {
@@ -304,7 +303,6 @@ header h1 a {
 }
 .bq1 .text-2 a:hover {
   color: #ffffff;
-  display: block;
 }
 #isotope {
   font-size: 0;
