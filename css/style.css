@@ -68,14 +68,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-weight: 400;
   color: #287e7d;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-style: normal;
-}
-h6 {
-  font-weight: 300;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-style: normal;
 }
