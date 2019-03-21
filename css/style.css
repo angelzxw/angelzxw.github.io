@@ -8,7 +8,6 @@
 @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-
 html {
   width: 100%;
 }
@@ -23,10 +22,9 @@ body {
   position: relative;
   background: #343a5e;
   color: #363535;
-  font: 300 25px/45px 'Open Sans', sans-serif;
+  font: 300 18px/24px 'Open Sans', sans-serif;
   min-width: 1400px;
 }
-
 .ic {
   border:0;
   float:right;
