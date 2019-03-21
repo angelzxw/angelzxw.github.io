@@ -43,6 +43,14 @@
     $('.gallery .gall-item').touchTouch();
   });
   $(window).on('resize', function(){
+    if( navigator.userAgent.match(/Android/i)
+     || navigator.userAgent.match(/webOS/i)
+     || navigator.userAgent.match(/iPhone/i)
+     || navigator.userAgent.match(/iPad/i)
+     || navigator.userAgent.match(/iPod/i)
+     || navigator.userAgent.match(/BlackBerry/i)
+     || navigator.userAgent.match(/Windows Phone/i)
+    ) return;
     document.body.style.zoom = "100%"
   	zoom = $(window).width()/$("body").width()*100;
   	document.body.style.zoom = zoom+"%"
@@ -690,7 +698,7 @@ Seeking a challenging full-time employment in software development with a compan
           </div>
           <div class="element web">
             <div>
-              <a href="https://docs.google.com/presentation/d/1IVS4sdnH_xrGv7dJMcMQAcYkxMsXuCbQqGlGE3t9kqQ/edit?usp=sharing"><img src="images/" alt="" height="343px"><span></span></a>
+              <a href="https://docs.google.com/presentation/d/1IVS4sdnH_xrGv7dJMcMQAcYkxMsXuCbQqGlGE3t9kqQ/edit?usp=sharing"><img src="images/gal_img10.jpg" alt="" height="343px"><span></span></a>
             </div>
           </div>
           <div class="element game">
