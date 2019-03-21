@@ -30,7 +30,7 @@
   $('.gallery .gall_item').touchTouch();
  });
  $(document).ready(function(){
-   zoom = $(window).width()/$("body").width()*100;
+   zoom = $('html').innerwidth()/$(window).width()*100;
  	 document.body.style.zoom = zoom+"%";
      jQuery('#camera_wrap').camera({
       loader: false,
